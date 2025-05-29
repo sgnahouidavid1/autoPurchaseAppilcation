@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/steel_blue"
+    tools:context=".PurchaseActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-1dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_activity_main"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView1"
+        android:background="@color/steel_blue"
+        android:gravity="center_horizontal"
+        android:text="@string/instruction"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/car_price"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <!--  Loan Term Selection  -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-6dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:width="90dp"
+        android:autofillHints="@string/car_price"
+        android:backgroundTint="@color/bone_white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="@color/bone_white"
+        android:textCursorDrawable="@drawable/cursor_color">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/down_payment"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:width="90dp"
+        android:backgroundTint="@color/bone_white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="@color/bone_white">
+
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="144dp"
+        android:text="@string/loan_term"
+        android:textColor="@color/bone_white"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="236dp"
+        android:background="@color/steel_blue"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingEnd="20dp"
+            android:text="@string/years2"
+            android:textColor="@color/bone_white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingEnd="20dp"
+            android:text="@string/years3"
+            android:textColor="@color/bone_white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/years4"
+            android:textColor="@color/bone_white"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/generate_btn"
+        android:backgroundTint="@color/bone_white"
+        app:cornerRadius="0dp"
+        android:textColor="@color/steel_blue"
+        android:onClick="activateLoanSummary"/>
+
+
+</RelativeLayout>
